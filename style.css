@@ -1,0 +1,165 @@
+@font-face {
+    font-family:"SuisseIntl Light";
+    src:url("fonts/SuisseIntl-Light.woff2") format("woff2"),url("fonts/SuisseIntl-Light.woff") format("woff"),url("fonts/SuisseIntl-Light.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:"SuisseIntl Regular";
+    src:url("fonts/SuisseIntl-Regular.woff2") format("woff2"),url("fonts/SuisseIntl-Regular.woff") format("woff"),url("fonts/SuisseIntl-Regular.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+:root {
+    --c-black: #000;
+    --c-white: #fff;
+    --c-info: #A6A6A6;
+    --c-link: #2E76F6;
+    --c-link-visited: #2156B7;
+    --c-line: 1px solid #A6A6A6;
+}
+
+html { box-sizing: border-box }
+*, *:before, *:after { box-sizing: inherit }
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { margin: 0; padding: 0 }
+
+html {
+  font-family: "SuisseIntl Light", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+body {
+  padding-bottom: : 3rem;
+  background-color: white;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+}
+
+a {
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  font-weight: normal;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+}
+
+.p-end {
+  padding-bottom: 1rem;
+}
+
+.description {
+  padding-top: 15%;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -0.08rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 1rem 2rem 1rem;
+}
+
+.button {
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: inherit;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.5rem 1.75rem 0.5rem 1.75rem;
+  min-width: 10rem;
+  max-width: 11rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.button:hover {
+  text-decoration: none;
+  transition: 0.15s;
+  cursor: pointer;
+}
+
+.left {
+  margin-right: 1rem;
+  float: left;
+}
+
+.right {
+  margin-left: 1rem;
+  float: right;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0.5rem;
+}
+
+.product {
+  flex: 32%;
+  margin: 0.25rem 0.25rem 1.5rem 0.25rem;
+  max-width: 32.85%;
+}
+
+.product-detail {
+  flex: 45%;
+  margin: 0.25rem 0.4rem 0rem 0.4rem;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about {
+  max-width: 50%;
+  margin-top: 7rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  padding-bottom: 0.25rem;
+}
+
+a:hover {
+  text-decoration: none;
+  /* cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='45' height='54' viewport='0 0 100 100' style='fill:black;font-size:14px;'><text y='50%'>🌸</text></svg>")16 0,auto; */
+}
+
+@media screen and (max-width: 600px) {
+  .product {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
