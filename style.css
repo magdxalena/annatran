@@ -109,13 +109,13 @@ a {
 .left {
   margin-right: 1rem;
   float: left;
-  padding: 0.5rem 0rem 0.5rem 0rem;
+  padding: 0.25rem 0rem 0.25rem 0rem;
 }
 
 .right {
   margin-left: 1rem;
   float: right;
-  padding: 0.5rem 0rem 0.5rem 0rem;
+  padding: 0.25rem 0rem 0.25rem 0rem;
 }
 
 .gallery {
